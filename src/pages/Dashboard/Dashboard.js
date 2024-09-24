@@ -205,9 +205,8 @@ const Dashboard = () => {
             <div
               className="d-flex align-items-center justify-content-center position-absolute w-100"
               style={{
-                bottom: "0",
+                bottom: "20px",
                 padding: "10px",
-                backgroundColor: "white",
               }}
             >
               <AddButton icon={"5"} text={"VIEW INVITATIONS"} />
