@@ -184,6 +184,7 @@ const Dashboard = () => {
               maxHeight: "77vh",
               overflow: "hidden",
               overflowX: "hidden",
+              borderRadius: 0,
             }}
           >
             <Col className="d-flex align-items-center justify-content-between">
@@ -204,7 +205,7 @@ const Dashboard = () => {
             <div
               className="d-flex align-items-center justify-content-center position-absolute w-100"
               style={{
-                bottom: "0", 
+                bottom: "0",
                 padding: "10px",
                 backgroundColor: "white",
               }}
