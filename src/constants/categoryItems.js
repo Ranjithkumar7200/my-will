@@ -11,6 +11,7 @@ export const categoryItems = [
     icon: <BsPersonAdd color={"white"} size={40} />,
     header: "ADD",
     description: "Beneficiaries",
+    count: 4,
   },
   {
     bg: "white",
@@ -18,6 +19,7 @@ export const categoryItems = [
     icon: <ImHome2 color={"#2b6cb3"} size={40} />,
     header: "ADD",
     description: "Asset",
+    count: 0,
   },
   {
     bg: "white",
@@ -25,6 +27,7 @@ export const categoryItems = [
     icon: <CiWallet color={"#2b6cb3"} size={40} />,
     header: "ADD",
     description: "Liability",
+    count: 0,
   },
   {
     bg: "white",
@@ -32,6 +35,7 @@ export const categoryItems = [
     icon: <PiTreeStructure color={"#2b6cb3"} size={40} />,
     header: "Create",
     description: "Links",
+    count: 0,
   },
   {
     bg: "white",
@@ -39,6 +43,7 @@ export const categoryItems = [
     icon: <HiOutlinePencil color={"#2b6cb3"} size={40} />,
     header: "ADD",
     description: "Signatories",
+    count: 0,
   },
   {
     bg: "white",
@@ -46,5 +51,6 @@ export const categoryItems = [
     icon: <PiNoteDuotone color={"#2b6cb3"} size={40} />,
     header: "0",
     description: "Will Generation",
+    count: 0,
   },
 ];

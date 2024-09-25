@@ -147,6 +147,8 @@ const Beneficiaries = () => {
                 description={items.description}
                 header={items.header}
                 key={index}
+                count={items.count}
+                badgeColor={"white"}
               />
             ))}
           </Col>
@@ -162,6 +164,8 @@ const Beneficiaries = () => {
                 description={items.description}
                 header={items.header}
                 key={index}
+                count={items.count}
+                badgeColor={"white"}
               />
             ))}
           </Col>

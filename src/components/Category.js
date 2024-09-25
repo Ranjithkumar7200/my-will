@@ -8,9 +8,14 @@ const Category = ({
   description,
   icon,
   width,
+  count,
+  badgeColor,
 }) => {
   return (
-    <div className={className} style={{ backgroundColor: bg, width: width }}>
+    <div
+      className={className}
+      style={{ backgroundColor: bg, width: width, position: "relative" }}
+    >
       <div>{icon}</div>
       <div className="d-flex flex-column" style={{ color: color }}>
         <span style={{ fontSize: "15px", fontWeight: "800" }}>{header}</span>
@@ -18,6 +23,25 @@ const Category = ({
           {description}
         </span>
       </div>
+      {count > 0 && (
+        <span
+          style={{
+            position: "absolute",
+            top: "5px",
+            right: "5px",
+            backgroundColor: badgeColor,
+            color: "#2b6cb3",
+            borderRadius: "50%",
+            width: "20px",
+            height: "20px",
+            textAlign: "center",
+            fontSize: "12px",
+            fontWeight: "bold",
+          }}
+        >
+          {count}
+        </span>
+      )}
     </div>
   );
 };
