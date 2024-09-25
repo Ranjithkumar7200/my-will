@@ -7,8 +7,10 @@ import { FaPlus } from "react-icons/fa";
 import AddButton from "../../components/AddButton";
 import { IoIosArrowDown } from "react-icons/io";
 import ProfileCard from "../../components/ProfileCard";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-100 bgMain">
@@ -134,7 +136,11 @@ const Dashboard = () => {
             </Col>
             <Col className="mt-5 mb-4 d-flex flex-wrap align-items-start justify-content-md-between justify-content-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between">
               <Col className="d-flex mb-3 justify-content-center justify-content-xxl-start justify-content-xl-start justify-content-lg-start justify-content-md-start">
-                <AddButton icon={<FaPlus />} text={"ADD NEW"} />
+                <AddButton
+                  icon={<FaPlus />}
+                  text={"ADD NEW"}
+                  onClick={() => navigate("/beneficiaries")}
+                />
               </Col>
               <Col className="d-flex gap-4   justify-content-xxl-end justify-content-xl-end  justify-content-lg-end justify-content-md-end justify-content-center align-items-center">
                 <div className="d-flex flex-column align-items-center pointer justify-content-end">

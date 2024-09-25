@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddButton = ({ icon, text }) => {
+const AddButton = ({ icon, text ,onClick }) => {
   return (
     <>
       <span
@@ -14,6 +14,7 @@ const AddButton = ({ icon, text }) => {
           width: "200px",
           textWrap: "nowrap",
         }}
+        onClick={onClick}
       >
         <span
           className="text-center text-light position-absolute"

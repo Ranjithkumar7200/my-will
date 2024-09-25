@@ -13,3 +13,28 @@
 .pointer{
   cursor: pointer;
 }
+.custom-pagination {
+  background-color: transparent;
+  border: none;
+}
+
+.custom-pagination .page-item {
+  margin: 0; 
+  padding: 0; 
+}
+
+.custom-pagination .page-link {
+  background: none; 
+  color: inherit; 
+  border: none; 
+}
+
+.custom-pagination .page-link:hover {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.custom-pagination .disabled .page-link {
+  pointer-events: none; 
+  opacity: 0.5; 
+}
