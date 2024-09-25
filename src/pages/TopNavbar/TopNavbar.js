@@ -90,10 +90,13 @@ const TopNavbar = () => {
             <div className="me-3 position-relative pointer">
               <FaBell size={20} />
               <Badge
-                bg="danger"
                 pill
                 className="position-absolute translate-middle badge-sm "
-                style={{ top: "4px", right: "-20px" }}
+                style={{
+                  top: "4px",
+                  right: "-20px",
+                  backgroundColor: "#2b6cb3",
+                }}
               >
                 5
               </Badge>
