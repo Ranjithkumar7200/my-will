@@ -32,29 +32,30 @@ const Dashboard = () => {
               </span>
               <span style={{ fontSize: "12px" }}>1/3</span>
             </Col>
-            <Col className="my-5 d-flex flex-wrap align-items-start justify-content-md-between justify-content-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between gap-2">
-              <Col className="position-relative d-flex mr-2 align-items-center justify-content-between gap-5">
-                {" "}
-                <Image
-                  src={emp1}
-                  alt="Ethan Will"
-                  className="profile-pic bg-secondary position-relative"
-                  width={120}
-                  height={120}
-                  style={{ objectFit: "contain" }}
-                />
-                <div
-                  className="position-absolute d-flex flex-row align-items-center justify-content-center bottom-0"
-                  style={{
-                    width: "120px",
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
-                  }}
-                >
-                  <span className="text-light" style={{ fontSize: "12px" }}>
-                    ETHAN 'Will'
-                  </span>
+            <Col className="my-5 d-flex flex-wrap align-items-start justify-content-md-between justify-content-center justify-content-xxl-between justify-content-xl-between justify-content-lg-between  gap-5">
+              <div className="d-flex flex-row justify-content-center align-items-center gap-4">
+                <div className="position-relative d-flex justify-content-center">
+                  <Image
+                    src={emp1}
+                    alt="Ethan Will"
+                    className="profile-pic bg-secondary"
+                    width={120}
+                    height={120}
+                    style={{ objectFit: "contain" }}
+                  />
+                  <div
+                    className="position-absolute d-flex flex-row align-items-center justify-content-center bottom-0"
+                    style={{
+                      width: "120px",
+                      backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    }}
+                  >
+                    <span className="text-light" style={{ fontSize: "12px" }}>
+                      ETHAN 'Will'
+                    </span>
+                  </div>
                 </div>
-                <Col className="">
+                <div className="text-start">
                   <h6 className="my-3">Information</h6>
                   <p style={{ fontSize: "10px" }} className="text-nowrap">
                     <span style={{ fontWeight: "bold" }}>D.O.C : </span>
@@ -64,55 +65,56 @@ const Dashboard = () => {
                     <span style={{ fontWeight: "bold" }}>STATUS : </span>
                     Complete
                   </p>
-                </Col>
-              </Col>
-              <Col className="d-flex flex-wrap justify-content-center mt-4">
-                <Col className="d-flex gap-2 justify-content-center">
-                  <div>
-                    {" "}
-                    <span
-                      className="text-secondary"
-                      style={{ fontSize: "25px", fontWeight: "bolder" }}
-                    >
-                      ₹
-                    </span>
-                  </div>
-                  <div className="d-flex flex-column justify-content-center gap-0 ">
+                </div>
+              </div>
+
+              <Col className="d-flex justify-content-md-end justify-content-center gap-2 mt-4 flex-nowrap">
+                <div className="d-flex gap-2 justify-content-center justify-content-md-end">
+                  <span
+                    className="text-secondary"
+                    style={{ fontSize: "25px", fontWeight: "bolder" }}
+                  >
+                    ₹
+                  </span>
+                  <div className="d-flex flex-column justify-content-center gap-0">
                     <span
                       className="text-secondary"
                       style={{ fontSize: "20px", fontWeight: "400" }}
                     >
-                      {" "}
-                      2.5 Lakhs{" "}
+                      2.5 Lakhs
                     </span>
                     <span className="text-success" style={{ fontSize: "10px" }}>
                       Worth of Assets Today
                     </span>
                   </div>
-                </Col>
-                <Col className="d-flex gap-2 justify-content-center">
-                  <div>
-                    {" "}
-                    <span
-                      className="text-secondary"
-                      style={{ fontSize: "25px", fontWeight: "bolder" }}
-                    >
-                      ₹
-                    </span>
-                  </div>
-                  <div className="d-flex flex-column justify-content-center  gap-0 ">
+                </div>
+                <div
+                  className="mx-2"
+                  style={{
+                    borderLeft: "2px solid #ccc",
+                    height: "25px",
+                    alignSelf: "center",
+                  }}
+                ></div>
+                <div className="d-flex gap-2 justify-content-center justify-content-md-end">
+                  <span
+                    className="text-secondary"
+                    style={{ fontSize: "25px", fontWeight: "bolder" }}
+                  >
+                    ₹
+                  </span>
+                  <div className="d-flex flex-column justify-content-center gap-0">
                     <span
                       className="text-secondary"
                       style={{ fontSize: "20px", fontWeight: "400" }}
                     >
-                      {" "}
-                      2.5 Lakhs{" "}
+                      2.5 Lakhs
                     </span>
                     <span className="text-danger" style={{ fontSize: "10px" }}>
                       Worth of Assets Today
                     </span>
                   </div>
-                </Col>
+                </div>
               </Col>
             </Col>
 
