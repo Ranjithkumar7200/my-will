@@ -38,3 +38,12 @@
   pointer-events: none; 
   opacity: 0.5; 
 }
+.text-input {
+  color: black;
+}
+
+.text-input::placeholder {
+  color: black; 
+  font-size: 14px; 
+  letter-spacing: 0.15em;
+}

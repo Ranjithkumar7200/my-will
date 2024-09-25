@@ -165,7 +165,7 @@ const BeneficiaryTable = () => {
           </tbody>
         </Table>
         <Col
-          className="d-flex px-5  justify-content-between align-items-center"
+          className="d-flex px-md-5 px-1  justify-content-between align-items-center"
           style={{ height: "30px" }}
         >
           <p className="text-center">

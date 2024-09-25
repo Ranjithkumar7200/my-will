@@ -6,18 +6,23 @@ import { useNavigate } from "react-router-dom";
 import { categoryItems } from "../../constants/categoryItems";
 import Category from "../../components/Category";
 import BeneficiaryTable from "./BeneficiaryTable";
+import AddBeneficiaryForm from "./forms/AddBeneficiaryForm";
 
 const Beneficiaries = () => {
   const navigate = useNavigate();
 
   return (
     <>
-      <Col className="d-flex flex-md-row  flex-column">
+      <Col className="d-flex flex-lg-row  flex-column">
         <Col
           xs={12}
           md={1}
-          className="bgMain px-1 d-md-flex flex-column  d-none align-items-center justify-content-between"
-          style={{ height: "calc(100vh - 72px)", width: "150px",marginRight:"15px" }}
+          className="bgMain px-1 d-lg-flex flex-column  d-none align-items-center justify-content-between"
+          style={{
+            height: "calc(100vh - 72px)",
+            width: "150px",
+            marginRight: "15px",
+          }}
         >
           <div>
             <div className="position-relative mt-5 d-flex justify-content-center">
@@ -73,7 +78,7 @@ const Beneficiaries = () => {
             </span>
           </div>
         </Col>
-        <Col className="bgMain px-1 d-md-none flex-column d-flex align-items-center justify-content-between">
+        <Col className="bgMain px-1 d-lg-none flex-column d-flex align-items-center justify-content-between">
           <div>
             <div className="position-relative mt-5 d-flex justify-content-center">
               <Image
@@ -129,7 +134,7 @@ const Beneficiaries = () => {
           </div>
         </Col>
 
-        <Col className="bg-light">
+        <Col className="bg-light" >
           <Col className="d-none d-lg-flex  flex-md-nowrap flex-wrap">
             {categoryItems.map((items, index) => (
               <Category
@@ -160,11 +165,13 @@ const Beneficiaries = () => {
               />
             ))}
           </Col>
-          <Col>
-            <Col className="px-md-0 px-4">
+          <Col className="d-flex flex-wrap">
+            <Col xs={12} lg={8} className="px-lg-0 px-4">
               <BeneficiaryTable />
             </Col>
-            <Col></Col>
+            <Col className="px-lg-0 px-4 py-lg-0 py-4" xs={12} lg={4}>
+              <AddBeneficiaryForm />
+            </Col>
           </Col>
         </Col>
       </Col>
@@ -173,48 +180,3 @@ const Beneficiaries = () => {
 };
 
 export default Beneficiaries;
-
-// <Table striped bordered hover responsive="md">
-//             <thead>
-//               <tr>
-//                 <th>#</th>
-//                 <th>Name</th>
-//                 <th>Relationship</th>
-//                 <th>Date of Birth</th>
-//                 <th>Status</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {beneficiaries.map((beneficiary, index) => (
-//                 <tr key={beneficiary.id}>
-//                   <td>{index + 1}</td>
-//                   <td>{beneficiary.name}</td>
-//                   <td>{beneficiary.relationship}</td>
-//                   <td>{beneficiary.dob}</td>
-//                   <td>
-//                     <Form.Check
-//                       type="switch"
-//                       id={`status-switch-${beneficiary.id}`}
-//                       label={
-//                         beneficiary.status === "Active" ? "Active" : "Inactive"
-//                       }
-//                       checked={beneficiary.status === "Active"}
-//                       onChange={() => {
-//                         const newStatus =
-//                           beneficiary.status === "Active"
-//                             ? "Inactive"
-//                             : "Active";
-//                         setBeneficiaries((prev) =>
-//                           prev.map((b) =>
-//                             b.id === beneficiary.id
-//                               ? { ...b, status: newStatus }
-//                               : b
-//                           )
-//                         );
-//                       }}
-//                     />
-//                   </td>
-//                 </tr>
-//               ))}
-//             </tbody>
-//           </Table>
