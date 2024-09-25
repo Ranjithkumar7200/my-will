@@ -4,7 +4,6 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { RxDoubleArrowLeft, RxDoubleArrowRight } from "react-icons/rx";
 
 const BeneficiaryTable = () => {
-  // Sample data
   const [beneficiaries, setBeneficiaries] = useState([
     {
       id: 1,
@@ -79,9 +78,8 @@ const BeneficiaryTable = () => {
   ]);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // Number of items per page
+  const itemsPerPage = 5;
 
-  // Function to toggle beneficiary status
   const toggleStatus = (id) => {
     setBeneficiaries((prev) =>
       prev.map((beneficiary) =>
@@ -95,15 +93,10 @@ const BeneficiaryTable = () => {
     );
   };
 
-  // Get the current items to display based on the page
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = beneficiaries.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Calculate total pages
   const totalPages = Math.ceil(beneficiaries.length / itemsPerPage);
-
-  // Pagination change handler
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };

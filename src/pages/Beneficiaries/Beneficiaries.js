@@ -134,7 +134,7 @@ const Beneficiaries = () => {
           </div>
         </Col>
 
-        <Col className="bg-light" >
+        <Col className="bg-light">
           <Col className="d-none d-lg-flex  flex-md-nowrap flex-wrap">
             {categoryItems.map((items, index) => (
               <Category
@@ -150,11 +150,11 @@ const Beneficiaries = () => {
               />
             ))}
           </Col>
-          <Col className="d-flex d-lg-none  flex-lg-nowrap flex-wrap justify-content-center justify-content-md-start">
+          <Col className="d-flex d-lg-none  px-3 px-lg-0 flex-lg-nowrap flex-wrap justify-content-center justify-content-md-start">
             {categoryItems.map((items, index) => (
               <Category
                 className={
-                  "d-flex flex-nowrap  px-5 px-lg-0 align-items-center m-2 m-lg-0 py-2 justify-content-center gap-2 border"
+                  "d-flex flex-nowrap w-100  px-5 px-lg-0 align-items-center m-2 m-lg-0 py-2 justify-content-center gap-2 border"
                 }
                 bg={items.bg}
                 color={items.color}

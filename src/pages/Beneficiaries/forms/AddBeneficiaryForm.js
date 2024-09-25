@@ -1,19 +1,36 @@
 import React from "react";
 import TextInput from "../../../components/TextInput";
-import { Col, Button } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import DefaultButton from "../../../components/DefaultButton";
 
 const AddBeneficiaryForm = () => {
   return (
     <div
       className="d-flex flex-column align-items-center justify-content-between p-4"
-      style={{ backgroundColor: "#edeef0" }}
+      style={{ backgroundColor: "#ededed" }}
     >
       <p
         className="text-center"
-        style={{ fontSize: "18px", fontWeight: "bold" }}
+        style={{
+          fontSize: "18px",
+          fontWeight: "400",
+          display: "inline-block",
+          position: "relative",
+        }}
       >
         Add New Beneficiary
+        <span
+          style={{
+            content: '""',
+            display: "block",
+            height: "1px",
+            backgroundColor: "black",
+            width: "100%",
+            position: "absolute",
+            bottom: "-5px",
+            left: "0",
+          }}
+        />
       </p>
 
       <Col className="w-100">

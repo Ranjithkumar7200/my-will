@@ -19,8 +19,6 @@ import {
 
 const TopNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-
-  // Functions to toggle Offcanvas (menu)
   const handleCloseMenu = () => setShowMenu(false);
   const handleShowMenu = () => setShowMenu(true);
 
@@ -45,28 +43,43 @@ const TopNavbar = () => {
           className="d-flex justify-content-end align-items-center"
         >
           <div className="d-none mx-2 d-md-block">
-            <InputGroup style={{ border: "none", outline: "none" }}>
+            <InputGroup style={{ position: "relative" }}>
               <FormControl
                 placeholder="Search..."
                 aria-label="Search"
                 style={{
+                  border: "none",
                   borderBottom: "2px solid black",
                   borderRadius: 0,
-                  boxShadow: "none",
                   outline: "none",
+                  boxShadow: "none",
                 }}
                 className="bg-transparent"
               />
               <InputGroup.Text
                 className="pointer"
                 style={{
-                  backgroundColor: "transparent",
+                  border: "none",
                   borderBottom: "2px solid black",
                   borderRadius: 0,
+                  backgroundColor: "transparent",
+                  outline: "none",
                   boxShadow: "none",
                 }}
               >
                 <FaSearch />
+                <span
+                  style={{
+                    content: '""',
+                    display: "block",
+                    height: "1px",
+                    backgroundColor: "grey",
+                    width: "100%",
+                    position: "absolute",
+                    bottom: "0",
+                    left: "0",
+                  }}
+                />
               </InputGroup.Text>
             </InputGroup>
           </div>
@@ -110,28 +123,43 @@ const TopNavbar = () => {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <InputGroup className="mb-3">
+          <InputGroup className="mb-3" style={{ position: "relative" }}>
             <FormControl
               placeholder="Search..."
               aria-label="Search"
               style={{
+                border: "none",
                 borderBottom: "2px solid black",
                 borderRadius: 0,
-                boxShadow: "none",
                 outline: "none",
+                boxShadow: "none",
               }}
               className="bg-transparent"
             />
             <InputGroup.Text
               className="pointer"
               style={{
-                backgroundColor: "transparent",
+                border: "none",
                 borderBottom: "2px solid black",
                 borderRadius: 0,
+                backgroundColor: "transparent",
+                outline: "none",
                 boxShadow: "none",
               }}
             >
               <FaSearch />
+              <span
+                style={{
+                  content: '""',
+                  display: "block",
+                  height: "1px",
+                  backgroundColor: "grey",
+                  width: "100%",
+                  position: "absolute",
+                  bottom: "0",
+                  left: "0",
+                }}
+              />
             </InputGroup.Text>
           </InputGroup>
           <Nav className="flex-column">
